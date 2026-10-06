@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    height: 100vh;
+
+    background: #ffd6e5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+}
+
+
+.container {
+    text-align: center;
+
+    animation: cute 2s ease-in-out infinite;
+}
+
+
+/* قلب كبير */
+
+.heart {
+    color: #ff6f9f;
+
+    font-size: 90px;
+
+    margin-bottom: -20px;
+
+    animation: heartbeat 1.2s infinite;
+}
+
+
+/* I LOVE YOU */
+
+h1 {
+    color: #ff4f8b;
+
+    font-size: 65px;
+
+    font-weight: 900;
+
+    letter-spacing: 3px;
+
+    margin: 0;
+
+    text-shadow: 3px 3px 0 white;
+}
+
+
+/* الجملة الصغيرة */
+
+.message {
+    color: #d94f7c;
+
+    font-size: 23px;
+
+    font-weight: bold;
+
+    margin-top: 15px;
+}
+
+
+/* Aya بحال signature */
+
+.signature {
+    color: #c94b78;
+
+    font-family: cursive;
+
+    font-size: 25px;
+
+    margin-top: 20px;
+
+    transform: rotate(-5deg);
+
+    opacity: 0.9;
+}
+
+
+/* النجيمات والقلوب */
+
+.sparkle {
+    position: absolute;
+
+    color: white;
+
+    font-size: 35px;
+
+    animation: sparkle 2s infinite ease-in-out;
+}
+
+
+.sparkle1 {
+    top: 15%;
+    left: 20%;
+}
+
+
+.sparkle2 {
+    top: 25%;
+    right: 20%;
+}
+
+
+.sparkle3 {
+    bottom: 20%;
+    left: 25%;
+}
+
+
+.sparkle4 {
+    bottom: 25%;
+    right: 25%;
+}
+
+
+.sparkle5 {
+    top: 12%;
+    right: 40%;
+}
+
+
+/* حركة القلب */
+
+@keyframes heartbeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+/* حركة خفيفة للرسالة */
+
+@keyframes cute {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+
+/* حركة النجيمات */
+
+@keyframes sparkle {
+
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
